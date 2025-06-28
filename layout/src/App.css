@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.app-container {
+  height: 100vh;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: rgb(225, 245, 148);
+  border-radius: 15px;
+  border: 10px solid #0b0b0b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.plus-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #d7830c;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.header-title{
+  font-size: 50px;
+}
+
+.header-subtitle{
+  font-size: 32px;
+}
+
+.multiplication-container{
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+  background-color: rgb(223, 160, 14);
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.division-container{
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+  background-color: rgb(208, 17, 30);
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-container{
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+  background-color: rgb(52, 22, 176);
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image{
+  width: 100px;
+  height: 100px;
+}
+
+.image2{
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.bottom-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-studies{
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(198, 21, 36);
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Responsive Design for the above layout*/
+@media (max-width: 768px) {
+  .app-container {
+    padding: 16px;
+  }
+  
+  .content-container {
+    padding: 24px;
+  }
+  
+  .header-title {
+    font-size: 28px;
+  }
+
+  .image2{
+    width: 100px;
+    height: 100px;
+  }
+
+  .social-studies{
+    width: 70px;
+    height: 70px;
+    font-size: 10px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .content-container {
+    padding: 16px;
+  }
+  
+  .plus-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+  
+  .header-title {
+    font-size: 25px;
+  }
+}
+
+.bottom-fixed {
+  position: sticky; /* Changed from fixed */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 800px;
+  background-color: #1c5ce7;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.padding-container{
+  padding: 32px;
+}
